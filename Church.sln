@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Church", "Church\Church.csproj", "{20E97AE2-FD8C-4875-A60B-AD6925600646}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApplication", "UserApplication\UserApplication.csproj", "{8F491F83-47A4-4CE1-AC05-7BE038E521F3}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Context", "Context\Context.csproj", "{AA757869-DE0F-42CF-B440-3229ABF75CF8}"
 EndProject
 Global
@@ -21,6 +23,10 @@ Global
 		{AA757869-DE0F-42CF-B440-3229ABF75CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA757869-DE0F-42CF-B440-3229ABF75CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA757869-DE0F-42CF-B440-3229ABF75CF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F491F83-47A4-4CE1-AC05-7BE038E521F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F491F83-47A4-4CE1-AC05-7BE038E521F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F491F83-47A4-4CE1-AC05-7BE038E521F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F491F83-47A4-4CE1-AC05-7BE038E521F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
