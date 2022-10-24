@@ -11,12 +11,14 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Context;
 
 namespace UserApplication
 {
     /// <summary>
     /// Логика взаимодействия для AuthorithationWindow.xaml
     /// </summary>
+
     public partial class AuthorithationWindow : Window
     {
         public AuthorithationWindow()
@@ -57,7 +59,7 @@ namespace UserApplication
             }
         }
 
-        private void Button_Registration_Click(object sender, RoutedEventArgs e)
+        private void btnSignUpWindowOpen_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();

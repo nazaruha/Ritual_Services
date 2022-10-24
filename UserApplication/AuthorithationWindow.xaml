@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:UserApplication"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="AuthorithationWindow" Height="450" Width="700">
+        Title="Authorithation Window" Height="450" Width="700">
     <Grid Background="#ffdadada">
         <Border MinWidth="400" Margin="15,0,15,0" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="500" CornerRadius="20">
             <Border.Effect>
@@ -15,12 +15,12 @@
             <StackPanel>
                 <TextBlock Text="Authorithation" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
                 <Grid>
-                    <Button HorizontalAlignment="Left" Content="Registration" Click="Button_Registration_Click"/>
-                    <Button HorizontalAlignment="Right" Content="Sign up" Style="{StaticResource MaterialDesignFlatButton}"/>
+                    <Button HorizontalAlignment="Left" Content="Web-Church"/>
+                    <Button Name="btnSignUpWindowOpen" HorizontalAlignment="Right" Content="Sign up" Style="{StaticResource MaterialDesignFlatButton}" Click="btnSignUpWindowOpen_Click"/>
                 </Grid>
                 <TextBox x:Name ="login_tb" materialDesign:HintAssist.Hint ="Input login" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="Arrow"/>
                 <PasswordBox x:Name ="password_pb" materialDesign:HintAssist.Hint ="Input your password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
-                <Button Content="Sign up" Margin="0 20" Click="Button_Authorithation_Click" Cursor="Hand"/>
+                <Button Content="Sign in" Margin="0 20" Click="Button_Authorithation_Click" Cursor="Hand"/>
             </StackPanel>
 
         </Border>

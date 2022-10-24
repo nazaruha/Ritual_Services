@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Context;
 
 namespace UserApplication
 {
@@ -25,6 +26,7 @@ namespace UserApplication
         public MainWindow()
         {
             InitializeComponent();
+            
             //db = new ApplicationContext();
 
             //List<User> users = db.Users.ToList();
@@ -77,7 +79,7 @@ namespace UserApplication
             }
         }
 
-        private void Button_Sign_Up_Click(object sender, RoutedEventArgs e)
+        private void btnSignInWindowOpen_Click(object sender, RoutedEventArgs e)
         {
             AuthorithationWindow authorithationWindow = new AuthorithationWindow();
             authorithationWindow.Show();
