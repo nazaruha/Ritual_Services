@@ -46,10 +46,10 @@ namespace UserApplication
                 password_pb.ToolTip = "";
                 password_pb.Background = Brushes.Transparent;
                 User authUser = null;
-                using (ApplicationContext db = new ApplicationContext())
-                {
-                    authUser = db.Users.Where(b => b.Login == login && b.Pass == pass).FirstOrDefault();
-                }
+                //using (ApplicationContext db = new ApplicationContext())
+                //{
+                //    authUser = db.Users.Where(b => b.Login == login && b.Pass == pass).FirstOrDefault();
+                //}
                 if (authUser != null)
                     MessageBox.Show("Everything seems fine");
                 else

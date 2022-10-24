@@ -25,10 +25,10 @@ namespace UserApplication
         public MainWindow()
         {
             InitializeComponent();
-            db = new ApplicationContext();
+            //db = new ApplicationContext();
 
-            List<User> users = db.Users.ToList();
-            string str = "";
+            //List<User> users = db.Users.ToList();
+            //string str = "";
             // foreach (User user in users)
             //      str += "Login: " + user.Login + "  ";
             // RegisterTest.Text = str;
@@ -73,7 +73,7 @@ namespace UserApplication
                 MessageBox.Show("Everything seems fine");
                 User user = new User(login,email,pass);
                 db.Users.Add(user);
-                db.SaveChanges();
+               // db.SaveChanges();
             }
         }
 
