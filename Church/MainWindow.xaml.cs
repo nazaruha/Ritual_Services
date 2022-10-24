@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Context;
 
 namespace Church
 {
@@ -20,9 +21,11 @@ namespace Church
     /// </summary>
     public partial class MainWindow : Window
     {
+        MyDataContext context { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+            context = new MyDataContext();
         }
     }
 }
