@@ -8,18 +8,16 @@ namespace UserApplication
 {
     public class User
     {
-        private string login, email, pass;
         public int Id { get; set; }
-        public string Login { get { return login; } set { email = value; } }
-        public string Email { get { return email; } set { email = value; } }
-        public string Pass { get { return pass; } set { pass = value; } }
+        public string Login { get;}
+        public string Email { get;}
+        public string Password { get; set; }
         public User() { }
         public User(string login, string email, string password)
         {
-           // Id = id;
-            this.login = login;
-            this.email = email;
-            this.pass = password;
+            Login = login;
+            Email = email;
+            Password = password;
         }
     }
 }
