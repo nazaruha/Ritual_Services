@@ -19,5 +19,11 @@ namespace UserApplication
             Email = email;
             Password = password;
         }
+
+        public User(string login, string password)
+        {
+            Login = login;
+            Password = password;
+        }
     }
 }
