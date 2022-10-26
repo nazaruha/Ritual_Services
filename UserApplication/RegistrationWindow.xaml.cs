@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Context;
+using Context.Entities;
 
 namespace UserApplication
 {
@@ -22,19 +23,11 @@ namespace UserApplication
    
     public partial class MainWindow : Window
     { 
-        ApplicationContext db;
+        public MyDataContext context { get; set; }
         public MainWindow()
         {
             InitializeComponent();
-            
-            //db = new ApplicationContext();
-
-            //List<User> users = db.Users.ToList();
-            //string str = "";
-            // foreach (User user in users)
-            //      str += "Login: " + user.Login + "  ";
-            // RegisterTest.Text = str;
-            //<TextBlock x:Name="RegisterTest" FontWeight="Bold" Margin="0 0 0 20"/> // near another textblock
+            context = new MyDataContext();
         }
 
         private void ButtonReg_Click(object sender, RoutedEventArgs e)
@@ -72,10 +65,20 @@ namespace UserApplication
                 password_pb_2.Background = Brushes.Transparent;
                 email_tb.ToolTip = "";
                 email_tb.Background = Brushes.Transparent;
-                MessageBox.Show("Everything seems fine");
-                User user = new User(login,email,pass);
-                db.Users.Add(user);
-               // db.SaveChanges();
+                if (context.Users.Any(u => u.Login == login))
+                {
+                    MessageBox.Show("This login is occupied");
+                    return;
+                }
+                if (context.Users.Any(u => u.Email == email))
+                {
+                    MessageBox.Show("This email is occupied");
+                    return;
+                }
+                User user = new User() { Login = login, Email = email, Password = pass };
+                context.Users.Add(user);
+                context.SaveChanges();
+                MessageBox.Show("Registration is successfull!", "Resitration Success", MessageBoxButton.OK);
             }
         }
 
