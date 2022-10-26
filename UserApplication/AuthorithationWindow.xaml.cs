@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Context;
+using Context.Entities;
 
 namespace UserApplication
 {
@@ -19,10 +21,12 @@ namespace UserApplication
     /// </summary>
     public partial class AuthorithationWindow : Window
     {
+        public MyDataContext context { get; set; }
+
         public AuthorithationWindow()
         {
             InitializeComponent();
-            //db = new 
+            context = new MyDataContext();
         }
 
         private void Button_Authorithation_Click(object sender, RoutedEventArgs e)
@@ -45,19 +49,19 @@ namespace UserApplication
                 login_tb.Background = Brushes.Transparent;
                 password_pb.ToolTip = "";
                 password_pb.Background = Brushes.Transparent;
-                User authUser = null;
-                //using (ApplicationContext db = new ApplicationContext())
-                //{
-                //    authUser = db.Users.Where(b => b.Login == login && b.Pass == pass).FirstOrDefault();
-                //}
-                if (authUser != null)
-                    MessageBox.Show("Everything seems fine");
+
+                User authUser = new User() { Login = login, Password = pass };
+                if (context.Users.Any(u => u.Login == authUser.Login && u.Password == authUser.Password))
+                {
+                    authUser = context.Users.First(u => u.Login == authUser.Login && u.Password == authUser.Password);
+                    MessageBox.Show($"This User exists {authUser.Email}");
+                }
                 else
-                    MessageBox.Show("Something is bad");
+                    MessageBox.Show("Incorrcet Login or Password");
             }
         }
 
-        private void Button_Registration_Click(object sender, RoutedEventArgs e)
+        private void btnSignUpWindowOpen_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
