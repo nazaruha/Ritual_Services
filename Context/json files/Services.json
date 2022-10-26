@@ -1,10 +1,8 @@
-{
-  "Service": [
-    {
-      "Name": "Ritual"
-    },
-    {
-      "Name": "Church"
-    }
-  ]
-}
+[
+  {
+    "Name": "Ritual"
+  },
+  {
+    "Name": "Church"
+  }
+]
