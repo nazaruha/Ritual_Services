@@ -16,6 +16,7 @@ namespace Context
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Service> Services { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
