@@ -13,7 +13,12 @@ namespace Context.Entities
     {
         [Key]
         public int Id { get; set; }
-        [Required, StringLength(50)]
-        public string Name { get; set; }    
+        [Required, StringLength(300)]
+        public string NameEng { get; set; }
+        [Required, StringLength(300)]
+        public string NameUkr { get; set; }
+        [ForeignKey("ServiceType")]
+        public int ServiceTypeId { get; set; }
+        public virtual ServiceType ServiceType { get; set; }
     }
 }
