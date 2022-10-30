@@ -6,8 +6,11 @@
         xmlns:local="clr-namespace:UserApplication"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="Authorithation Window" Height="450" Width="700">
-    <Grid Background="#ffdadada">
+        Title="Authorithation Window" Height="431" Width="708" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2133x1600/1586ee8551e06627e94f75dd0f3f181b/photo-1445153758740-1a8af538ab6a.jpg"/>
+        </Grid.Background>
         <Border MinWidth="400" Margin="15,0,15,0" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="500" CornerRadius="20">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
