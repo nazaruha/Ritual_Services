@@ -11,8 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Context;
-using Context.Entities;
+using LibContext;
+using LibContext.Entities;
 
 namespace UserApplication
 {
@@ -63,8 +63,8 @@ namespace UserApplication
 
         private void btnSignUpWindowOpen_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+            MainWindow registerWindow = new MainWindow();
+            registerWindow.Show();
             Hide();
         }
     }

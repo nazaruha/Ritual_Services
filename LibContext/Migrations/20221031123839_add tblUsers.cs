@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Context.Migrations
+namespace LibContext.Migrations
 {
     public partial class addtblUsers : Migration
     {
