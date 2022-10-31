@@ -17,6 +17,10 @@ namespace Context.Entities
         public string NameEng { get; set; }
         [Required, StringLength(300)]
         public string NameUkr { get; set; }
+        [Required]
+        public int Price { get; set; }
+        [Required, StringLength(2000)]
+        public string Description { get; set; }
         [ForeignKey("ServiceType")]
         public int ServiceTypeId { get; set; }
         public virtual ServiceType ServiceType { get; set; }
