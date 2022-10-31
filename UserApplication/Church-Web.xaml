@@ -12,26 +12,26 @@
             <ComboBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
-                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="Black" Offset="1"/>
                 </LinearGradientBrush>
             </ComboBox.BorderBrush>
             <ComboBoxItem>Ritual1</ComboBoxItem>
             <ComboBoxItem IsSelected="True">ALL</ComboBoxItem>
             <ComboBoxItem>Church</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="btn_order" Content="Order" HorizontalAlignment="Left" Margin="236,85,0,0" VerticalAlignment="Top" Click="Button_Order_Click"/>
-        <Button x:Name="btn_info" Content="Info" HorizontalAlignment="Center" Margin="0,85,0,0" VerticalAlignment="Top" Click="Button_Info_Click"/>
-        <ListView d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,217,282,27">
+        <Button x:Name="btn_order" Content="Order" HorizontalAlignment="Left" Margin="236,85,0,0" VerticalAlignment="Top" Click="Button_Order_Click" Height="32" Width="80"/>
+        <Button x:Name="btn_info" Content="Info" HorizontalAlignment="Center" Margin="0,85,0,0" VerticalAlignment="Top" Click="Button_Info_Click" Height="32" Width="75"/>
+        <ListView d:ItemsSource="{d:SampleData ItemCount=10}" Margin="10,172,282,27">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Label x:Name="lb_en" Content="EN" HorizontalAlignment="Left" Margin="697,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.475,0.545" Background="#FF673AB7" Foreground="#DDFFFFFF" />
-        <Label x:Name="lb_ua" Content="UA" HorizontalAlignment="Left" Margin="738,22,0,0" VerticalAlignment="Top" Background="#FF6739B7" Foreground="#DDFFFFFF"/>
-        <Image x:Name="pope_image" HorizontalAlignment="Left" Height="100" Margin="640,172,0,0" VerticalAlignment="Top" Width="100" Source="/photo1666602505.jpeg"/>
-        <Label x:Name="pope_info" Content="some pope info" HorizontalAlignment="Left" Margin="640,312,0,0" VerticalAlignment="Top" Height="24" Background="#FF6739B7" Foreground="#DDFFFFFF"/>
+        <Label x:Name="lb_en" Content="EN" HorizontalAlignment="Left" Margin="697,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.475,0.545" Background="#FF673AB7" Foreground="#DDFFFFFF" MouseDown="lb_en_MouseDown" />
+        <Label x:Name="lb_ua" Content="UA" HorizontalAlignment="Left" Margin="738,22,0,0" VerticalAlignment="Top" Background="#FF6739B7" Foreground="#DDFFFFFF" MouseDown="lb_ua_MouseDown"/>
+        <Image x:Name="pope_image" HorizontalAlignment="Left" Height="132" Margin="570,140,0,0" VerticalAlignment="Top" Width="170" Source="/photo1666602505.jpeg"/>
+        <Label x:Name="pope_info" Content="some pope info" HorizontalAlignment="Left" Margin="570,312,0,0" VerticalAlignment="Top" Height="24" Background="#FF6739B7" Foreground="#DDFFFFFF" Width="161"/>
 
     </Grid>
 </Window>

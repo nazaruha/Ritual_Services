@@ -32,5 +32,19 @@ namespace UserApplication
         {
 
         }
+
+        private void lb_en_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            btn_info.Content = "Info";
+            btn_order.Content = "Order";
+            pope_info.Content = "Some pope info";
+        }
+
+        private void lb_ua_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            btn_info.Content = "Інформація";
+            btn_order.Content = "Замовлення";
+            pope_info.Content = "Якась інформація";
+        }
     }
 }
