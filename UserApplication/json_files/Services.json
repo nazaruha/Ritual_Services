@@ -1,0 +1,177 @@
+[
+  {
+    "NameEng": "VIP letter (one name)",
+    "NameUkr": "Замовна записка (Одне ім'я)",
+    "Price": 30,
+    "Description": "",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Regular letter (up to 10 names)",
+    "NameUkr": "Проста записка (До 10 імен)",
+    "Price": 15,
+    "Description": "",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Regular Moloben",
+    "NameUkr": "Молебень звичайний",
+    "Price": 50,
+    "Description": "",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Water moleben",
+    "NameUkr": "Молебень водоосвятний",
+    "Price": 100,
+    "Description": "",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Akathist",
+    "NameUkr": "Акафіст",
+    "Price": 240,
+    "Description": "",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Prayers for the dead",
+    "Price": 500,
+    "Description": "",
+    "NameUkr": "Сорокоуст",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Regular candle",
+    "NameUkr": "Свічка звичайна",
+    "Price": 15,
+    "Description": "",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Candle next to Ikon",
+    "NameUkr": "Свічка біля ікони",
+    "Price": 25,
+    "Description": "",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Candle to the altar",
+    "NameUkr": "Свічка в алтарь",
+    "Price": 50,
+    "Description": "",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Memorial for the year",
+    "NameUkr": "Поминання на 1 рік",
+    "Price": 2500,
+    "Description": "",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Proscomide",
+    "NameUkr": "Проскомідія",
+    "Price": 150,
+    "Description": "",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Worship stream",
+    "NameUkr": "Трансляція Богослужіння",
+    "Price": 25,
+    "Description": "",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Prayer",
+    "NameUkr": "Молитва",
+    "Price": 400,
+    "Description": "",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Priest help",
+    "NameUkr": "Допомога священника",
+    "Price": 450,
+    "Description": "",
+    "ServiceTypeId": 2
+  },
+  {
+    "NameEng": "Funeral",
+    "NameUkr": "Організація похорону",
+    "Price": 4000,
+    "Description": "",
+    "ServiceTypeId": 1
+  },
+  {
+    "NameEng": "Registration of necessary documents",
+    "NameUkr": "Оформлення необхідних документів",
+    "Price": 500,
+    "Description": "",
+    "ServiceTypeId": 1
+  },
+  {
+    "NameEng": "Assistance in selection of cowards, wreaes and other ritual attributes",
+    "NameUkr": "Допомога в підборі труни, вінків та іншої ритуальної атрибутики",
+    "Price": 750,
+    "Description": "",
+    "ServiceTypeId": 1
+  },
+  {
+    "NameEng": "Organization of body transportation in morgue",
+    "NameUkr": "Організація транспортування тіла в морг",
+    "Price": 1500,
+    "Description": "",
+    "ServiceTypeId": 1
+  },
+  {
+    "NameEng": "Refrigerator services (body storage)",
+    "NameUkr": "Послуги холодильної камери (зберігання тіла)",
+    "Price": 500,
+    "Description": "",
+    "ServiceTypeId": 1
+  },
+  {
+    "NameEng": "Funeral transportation",
+    "NameUkr": "Надання ритуального транспорту (катафалку)",
+    "Price": 2500,
+    "Description": "",
+    "ServiceTypeId": 1
+  },
+  {
+    "NameEng": "Cremation facilities",
+    "NameUkr": "Послуги кремації",
+    "Price": 200,
+    "Description": "",
+    "ServiceTypeId": 1
+  },
+  {
+    "NameEng": "Registration of the place of burial with live flowers",
+    "NameUkr": "Оформлення місця поховання живими квітами",
+    "Price": 500,
+    "Description": "",
+    "ServiceTypeId": 1
+  },
+  {
+    "NameEng": "Priest service",
+    "NameUkr": "Послуги священника",
+    "Price": 750,
+    "Description": "",
+    "ServiceTypeId": 1
+  },
+  {
+    "NameEng": "Photography and Filming",
+    "NameUkr": "Фото, відео зйомка",
+    "Price": 1500,
+    "Description": "",
+    "ServiceTypeId": 1
+  },
+  {
+    "NameEng": "internation funeral transportation services",
+    "NameUkr": "Послуги міжнародних ритуальних перевезень",
+    "Price": 15000,
+    "Description": "",
+    "ServiceTypeId": 1
+  }
+]
