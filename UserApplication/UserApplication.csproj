@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="photo1666602505.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MaterialDesignColors" Version="2.0.9" />
     <PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.116" />
@@ -16,6 +20,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Context\Context.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="photo1666602505.jpeg" />
   </ItemGroup>
 
 </Project>
