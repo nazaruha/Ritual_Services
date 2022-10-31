@@ -8,16 +8,12 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="Church-Web" Height="450" Width="800">
     <Grid Background="#ffdadada">
-        <ComboBox x:Name="cb_choice" HorizontalAlignment="Left" Margin="40,92,0,0" VerticalAlignment="Top" Width="120" Text="All">
+        <ComboBox x:Name="cb_choice" HorizontalAlignment="Left" Margin="40,92,0,0" VerticalAlignment="Top" Width="120" Text="All" Loaded="cb_choice_Loaded">
             <ComboBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
                     <GradientStop Color="Black" Offset="1"/>
                 </LinearGradientBrush>
             </ComboBox.BorderBrush>
-            <ComboBoxItem>Ritual1</ComboBoxItem>
-            <ComboBoxItem IsSelected="True">ALL</ComboBoxItem>
-            <ComboBoxItem>Church</ComboBoxItem>
         </ComboBox>
         <Button x:Name="btn_order" Content="Order" HorizontalAlignment="Left" Margin="236,85,0,0" VerticalAlignment="Top" Click="Button_Order_Click" Height="32" Width="80"/>
         <Button x:Name="btn_info" Content="Info" HorizontalAlignment="Center" Margin="0,85,0,0" VerticalAlignment="Top" Click="Button_Info_Click" Height="32" Width="75"/>

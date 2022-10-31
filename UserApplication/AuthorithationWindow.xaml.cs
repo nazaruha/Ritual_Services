@@ -54,7 +54,10 @@ namespace UserApplication
                 if (context.Users.Any(u => u.Login == authUser.Login && u.Password == authUser.Password))
                 {
                     authUser = context.Users.First(u => u.Login == authUser.Login && u.Password == authUser.Password);
-                    MessageBox.Show($"This User exists {authUser.Email}");
+                    //MessageBox.Show($"This User exists {authUser.Email}");
+                    Church_Web church_Web = new Church_Web();
+                    church_Web.Show();
+                    Hide();
                 }
                 else
                     MessageBox.Show("Incorrcet Login or Password");

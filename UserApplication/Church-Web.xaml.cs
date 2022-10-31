@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using UserApplication.Moduls;
 
 namespace UserApplication
 {
@@ -38,6 +39,7 @@ namespace UserApplication
             btn_info.Content = "Info";
             btn_order.Content = "Order";
             pope_info.Content = "Some pope info";
+            //cb_choice.Items i
         }
 
         private void lb_ua_MouseDown(object sender, MouseButtonEventArgs e)
@@ -45,6 +47,24 @@ namespace UserApplication
             btn_info.Content = "Інформація";
             btn_order.Content = "Замовлення";
             pope_info.Content = "Якась інформація";
+        }
+
+        private void cb_choice_Loaded(object sender, RoutedEventArgs e)
+        {
+            // cb_choice.SelectedIndex = 0;
+            List<MyComboBoxItems> itemsEN = new List<MyComboBoxItems>
+            {
+                new MyComboBoxItems { Id = 0, Name = "test" },
+                new MyComboBoxItems { Id = 1, Name = "Test" }
+            };
+            List<MyComboBoxItems> itemsUA = new List<MyComboBoxItems>
+            {
+                new MyComboBoxItems { Id = 0, Name = "тест" },
+                new MyComboBoxItems { Id = 1, Name = "Тест" }
+            };
+            cb_choice.ItemsSource = itemsEN;
+            cb_choice.SelectedIndex = 0;
+            var data = cb_choice.Items[0] as MyComboBoxItems;
         }
     }
 }
