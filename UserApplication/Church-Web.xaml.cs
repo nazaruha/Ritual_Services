@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using UserApplication.Moduls;
+using LibContext;
 
 namespace UserApplication
 {
@@ -20,9 +21,11 @@ namespace UserApplication
     /// </summary>
     public partial class Church_Web : Window
     {
+        public MyDataContext context;
         public Church_Web()
         {
             InitializeComponent();
+            context = new MyDataContext();
         }
         private void Button_Info_Click(object sender, RoutedEventArgs e)
         {
