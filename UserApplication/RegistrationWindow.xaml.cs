@@ -78,7 +78,11 @@ namespace UserApplication
                 User user = new User() { Login = login, Email = email, Password = pass };
                 context.Users.Add(user);
                 context.SaveChanges();
+                //MessageBox.Show("Registration is successfull!", "Resitration Success", MessageBoxButton.OK);
                 MessageBox.Show("Registration is successfull!", "Resitration Success", MessageBoxButton.OK);
+                Church_Web church_Web = new Church_Web();
+                church_Web.Show();
+                Hide();
             }
         }
 
