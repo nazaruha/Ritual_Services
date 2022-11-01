@@ -29,17 +29,22 @@ namespace LibContext.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("Description")
+                    b.Property<string>("DescriptionEng")
                         .IsRequired()
                         .HasMaxLength(2000)
                         .HasColumnType("nvarchar(2000)");
+
+                    b.Property<string>("DescriptionUA")
+                       .IsRequired()
+                       .HasMaxLength(2000)
+                       .HasColumnType("nvarchar(2000)");
 
                     b.Property<string>("NameEng")
                         .IsRequired()
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
 
-                    b.Property<string>("NameUkr")
+                    b.Property<string>("NameUA")
                         .IsRequired()
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
@@ -70,7 +75,7 @@ namespace LibContext.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("NameUkr")
+                    b.Property<string>("NameUA")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");

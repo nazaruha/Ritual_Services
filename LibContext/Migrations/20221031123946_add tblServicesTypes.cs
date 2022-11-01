@@ -15,7 +15,7 @@ namespace LibContext.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NameEng = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    NameUkr = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
+                    NameUA = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
