@@ -16,6 +16,6 @@ namespace LibContext.Entities
         [Required, StringLength(50)]
         public string NameEng { get; set; }
         [Required, StringLength(50)]
-        public string NameUkr { get; set; }
+        public string NameUA { get; set; }
     }
 }
