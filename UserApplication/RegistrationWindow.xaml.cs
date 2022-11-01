@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,6 +25,7 @@ namespace UserApplication
     public partial class MainWindow : Window
     { 
         public MyDataContext context { get; set; }
+        public bool isEng { get; set; } = true;
         public MainWindow()
         {
             InitializeComponent();
@@ -80,7 +82,7 @@ namespace UserApplication
                 context.SaveChanges();
                 //MessageBox.Show("Registration is successfull!", "Resitration Success", MessageBoxButton.OK);
                 MessageBox.Show("Registration is successfull!", "Resitration Success", MessageBoxButton.OK);
-                Church_Web church_Web = new Church_Web();
+                Church_Web church_Web = new Church_Web(isEng);
                 church_Web.Show();
                 Hide();
             }

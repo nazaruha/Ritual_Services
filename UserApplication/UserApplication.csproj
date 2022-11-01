@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="photo1666602505.jpeg" />
+    <None Remove="БАТЮШКА.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,7 +36,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="photo1666602505.jpeg" />
+    <Resource Include="БАТЮШКА.png" />
   </ItemGroup>
 
 </Project>

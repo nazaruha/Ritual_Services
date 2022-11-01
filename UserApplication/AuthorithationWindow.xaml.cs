@@ -22,6 +22,7 @@ namespace UserApplication
     public partial class AuthorithationWindow : Window
     {
         public MyDataContext context { get; set; }
+        public bool isEng { get; set; } = true;
 
         public AuthorithationWindow()
         {
@@ -55,7 +56,7 @@ namespace UserApplication
                 {
                     authUser = context.Users.First(u => u.Login == authUser.Login && u.Password == authUser.Password);
                     //MessageBox.Show($"This User exists {authUser.Email}");
-                    Church_Web church_Web = new Church_Web();
+                    Church_Web church_Web = new Church_Web(isEng);
                     church_Web.Show();
                     Hide();
                 }
