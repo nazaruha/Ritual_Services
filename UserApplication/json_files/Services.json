@@ -3,175 +3,225 @@
     "NameEng": "VIP letter (one name)",
     "NameUkr": "Замовна записка (Одне ім'я)",
     "Price": 30,
-    "Description": "",
+    "DescriptionEng": "letter with names remembers not only in Proscomidiia but Litany too (one name)",
+    "DescriptionUA": "записка, імена з якої поминаються не тільки на Проскомідії, але ще й на сугубій єктенії",
+    "Photo": "Замовна_записка.jpg",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Regular letter (up to 10 names)",
     "NameUkr": "Проста записка (До 10 імен)",
     "Price": 15,
-    "Description": "",
+    "DescriptionEng": "letter with names remembers not only in Proscomidiia but Litany too (up to 10 names)",
+    "DescriptionUA": "записка, імена з якої поминаються не тільки на Проскомідії, але ще й на сугубій єктенії",
+    "Photo": "Проста_записка_(до_10_імен).jpg",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Regular Moloben",
     "NameUkr": "Молебень звичайний",
     "Price": 50,
-    "Description": "",
+    "DescriptionEng": "occures almost every human's problem: before the work, at buildings, illness etc.",
+    "DescriptionUA": "відбувається практично на будь-яку людську проблему: перед роботою, на будівництво, в разі хвороби, як на подяку за Божу милість",
+    "Photo": "Молобень_звичайний.jpg",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Water moleben",
     "NameUkr": "Молебень водоосвятний",
     "Price": 100,
-    "Description": "",
+    "DescriptionEng": "occures almost every human's problem: before the work, at buildings, illness etc. (with holy water)",
+    "DescriptionUA": "відбувається практично на будь-яку людську проблему: перед роботою, на будівництво, в разі хвороби, як на подяку за Божу милість (зі свяченою водою)",
+    "Photo": "Молобень_водоосвятний.png",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Akathist",
     "NameUkr": "Акафіст",
     "Price": 240,
-    "Description": "",
+    "DescriptionEng": "readings and singings in honor of Christ, Moter of God and certain sacreds",
+    "DescriptionUA": "читання і співи на честь Христа, Богородиці та певних святих",
+    "Photo": "Акафіст.jpg",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Prayers for the dead",
-    "Price": 500,
-    "Description": "",
     "NameUkr": "Сорокоуст",
+    "Price": 500,
+    "DescriptionEng": "daily praying memorial during 40 days at some orthodox churches ",
+    "DescriptionUA": "щоденне молитовне поминання протягом сорока днів в деяких православних церквах",
+    "Photo": "Сорокоуст.jpg",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Regular candle",
     "NameUkr": "Свічка звичайна",
     "Price": 15,
-    "Description": "",
+    "DescriptionEng": "simbolises Gods light, reality and truth which defeates sin's darkness",
+    "DescriptionUA": "символізує божественне світло, правду, істину, що перемагає темряву гріха.",
+    "Photo": "Свічка_звичайна.jpg",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Candle next to Ikon",
     "NameUkr": "Свічка біля ікони",
     "Price": 25,
-    "Description": "",
+    "DescriptionEng": "simbolises Gods light, reality and truth which defeates sin's darkness (using Icon +100 to faith)",
+    "DescriptionUA": "символізує божественне світло, правду, істину, що перемагає темряву гріха (з допомогою ікони +100 до віри)",
+    "Photo": "Свічка_біля_ікони.jpg",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Candle to the altar",
     "NameUkr": "Свічка в алтарь",
     "Price": 50,
-    "Description": "",
+    "DescriptionEng": "simbolises Gods light, reality and truth which defeates sin's darkness (using Altar +200 to faith)",
+    "DescriptionUA": "символізує божественне світло, правду, істину, що перемагає темряву гріха (з допомгою алтаря +200 до віри)",
+    "Photo": "Свічка_в_алтарь.jpg",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Memorial for the year",
     "NameUkr": "Поминання на 1 рік",
     "Price": 2500,
-    "Description": "",
+    "DescriptionEng": "deceased rememberings on the anniversary of death",
+    "DescriptionUA": "згадування померлого у річницю смерті",
+    "Photo": "Поминання.jpg",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Proscomide",
     "NameUkr": "Проскомідія",
     "Price": 150,
-    "Description": "",
+    "DescriptionEng": "names' remembering by prayer which you add for their health or peace",
+    "DescriptionUA": "молитовно поминаються імена, які ми подаємо в наміренні за здоров'я чи за упокій людей",
+    "Photo": "Проскомідія.jpg",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Worship stream",
     "NameUkr": "Трансляція Богослужіння",
     "Price": 25,
-    "Description": "",
+    "DescriptionEng": "external religious expression, expressed in civil prayer and rituals",
+    "DescriptionUA": "зовнішнє вираження релігійності, виражене в громадських молитвах і обрядах",
+    "Photo": "Богослужіння_онлайн.jpg",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Prayer",
     "NameUkr": "Молитва",
     "Price": 400,
-    "Description": "",
+    "DescriptionEng": "refering to the God, gods and other supernatural godlikes by your religion and words",
+    "DescriptionUA": "звернення до Бога, богів, інших надприродних істот вірою і словами",
+    "Photo": "Молитва.png",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Priest help",
     "NameUkr": "Допомога священника",
     "Price": 450,
-    "Description": "",
+    "DescriptionEng": "Father's answer on your any request",
+    "DescriptionUA": "Відповідь Отця на любе ваше питання чи прохання",
+    "Photo": "Допомога_священника.jpg",
     "ServiceTypeId": 2
   },
   {
     "NameEng": "Funeral",
     "NameUkr": "Організація похорону",
     "Price": 4000,
-    "Description": "",
+    "DescriptionEng": "correctly organised funeral, appropriate and worthy deceased funeral performing",
+    "DescriptionUA": "правильно організований похорон, гідний обряд проведення поховання покійного",
+    "Photo": "Похорони.jpg",
     "ServiceTypeId": 1
   },
   {
     "NameEng": "Registration of necessary documents",
     "NameUkr": "Оформлення необхідних документів",
     "Price": 500,
-    "Description": "",
+    "DescriptionEng": "you must have a passport who takes in charge in funeral, stamped approval about death",
+    "DescriptionUA": "потрібно мати при собі: паспорт особи відповідальної за поховання, гербове підтвердження про смерть",
+    "Photo": "документи_смерть.jpg",
     "ServiceTypeId": 1
   },
   {
     "NameEng": "Assistance in selection of cowards, wreaes and other ritual attributes",
     "NameUkr": "Допомога в підборі труни, вінків та іншої ритуальної атрибутики",
     "Price": 750,
-    "Description": "",
+    "DescriptionEng": "includdes coffin material, cross, blankets, towel",
+    "DescriptionUA": "входить матеріал труни, хрест, покривала, рушник",
+    "Photo": "допомога.jpg",
     "ServiceTypeId": 1
   },
   {
     "NameEng": "Organization of body transportation in morgue",
     "NameUkr": "Організація транспортування тіла в морг",
     "Price": 1500,
-    "Description": "",
+    "DescriptionEng": "significantly save your time and nerves",
+    "DescriptionUA": "значно заощадить ваш час і нерви",
+    "Photo": "Похоронний_транспорт(Трансляція_перевезення).jpg",
     "ServiceTypeId": 1
   },
   {
     "NameEng": "Refrigerator services (body storage)",
     "NameUkr": "Послуги холодильної камери (зберігання тіла)",
     "Price": 500,
-    "Description": "",
+    "DescriptionEng": "containing dead's body in the cooling chamber",
+    "DescriptionUA": "зберігання тіла в холодильній камері",
+    "Photo": "холодильна_камера.png",
     "ServiceTypeId": 1
   },
   {
     "NameEng": "Funeral transportation",
     "NameUkr": "Надання ритуального транспорту (катафалку)",
     "Price": 2500,
-    "Description": "",
+    "DescriptionEng": "long-distance ritual dead's transportation",
+    "DescriptionUA": "ритуальні міжміські перевезення померлих",
+    "Photo": "катафалк.jpg",
     "ServiceTypeId": 1
   },
   {
     "NameEng": "Cremation facilities",
     "NameUkr": "Послуги кремації",
     "Price": 200,
-    "Description": "",
+    "DescriptionEng": "making in special crematory",
+    "DescriptionUA": "здійснюється в крематорії",
+    "Photo": "кремація.jpg",
     "ServiceTypeId": 1
   },
   {
     "NameEng": "Registration of the place of burial with live flowers",
     "NameUkr": "Оформлення місця поховання живими квітами",
     "Price": 500,
-    "Description": "",
+    "DescriptionEng": "decorating grave by nature flowers",
+    "DescriptionUA": "прикрашення місце поховання живими квітами",
+    "Photo": "живі_квіти_поховання.jpg",
     "ServiceTypeId": 1
   },
   {
     "NameEng": "Priest service",
     "NameUkr": "Послуги священника",
     "Price": 750,
-    "Description": "",
+    "DescriptionEng": "Father's answer on your any request",
+    "DescriptionUA": "Відповідь Отця на любе ваше питання чи прохання",
+    "Photo": "Допомога_священника.jpg",
     "ServiceTypeId": 1
   },
   {
     "NameEng": "Photography and Filming",
     "NameUkr": "Фото, відео зйомка",
     "Price": 1500,
-    "Description": "",
+    "DescriptionEng": "professional funeral filming",
+    "DescriptionUA": "зйомка похорон на проф. камеру",
+    "Photo": "камера.jpg",
     "ServiceTypeId": 1
   },
   {
     "NameEng": "internation funeral transportation services",
     "NameUkr": "Послуги міжнародних ритуальних перевезень",
     "Price": 15000,
-    "Description": "",
+    "DescriptionEng": "dead transportation to Ukraine from another countries",
+    "DescriptionUA": "перевезення померлих в Україну з інших країн",
+    "Photo": "міжнародні_перевезення.png",
     "ServiceTypeId": 1
   }
 ]
