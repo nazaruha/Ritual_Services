@@ -23,6 +23,8 @@ namespace LibContext.Entities
         public string DescriptionEng { get; set; }
         [Required, StringLength(2000)]
         public string DescriptionUA { get; set; }
+        [Required, StringLength(500)]
+        public string Photo { get; set; }
         [ForeignKey("ServiceType")]
         public int ServiceTypeId { get; set; }
         public virtual ServiceType ServiceType { get; set; }
