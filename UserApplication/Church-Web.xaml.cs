@@ -80,7 +80,6 @@ namespace UserApplication
             //cb_choice.SelectedIndex = 0;
             //var data = cb_choice.Items[0] as MyComboBoxItems;
             InitializeComboBox(isEng);
-
         }
 
         private void ChangeLanguage() // Need to make changes with listView only 
@@ -138,23 +137,29 @@ namespace UserApplication
         private void ComboBoxToEng()
         {
             List<MyComboBoxItems> itemsEN = new List<MyComboBoxItems>();
+            MyComboBoxItems itemAll = new MyComboBoxItems() { Id = 0, Name = "All" };
             foreach (var item in context.ServicesTypes)
             {
                 MyComboBoxItems itemEN = new MyComboBoxItems() { Id = item.Id, Name = item.NameEng };
                 itemsEN.Add(itemEN);
             }
+            itemsEN.Add(itemAll);
             cb_choice.ItemsSource = itemsEN;
+            cb_choice.SelectedItem = itemAll;
         }
 
         private void ComboBoxToUA()
         {
             List<MyComboBoxItems> itemsUA = new List<MyComboBoxItems>();
+            MyComboBoxItems itemAll = new MyComboBoxItems() { Id = 0, Name = "Всі" };
             foreach (var item in context.ServicesTypes)
             {
                 MyComboBoxItems itemUA = new MyComboBoxItems() { Id = item.Id, Name = item.NameUA };
                 itemsUA.Add(itemUA);
             }
+            itemsUA.Add(itemAll);
             cb_choice.ItemsSource = itemsUA;
+            cb_choice.SelectedItem = itemAll;
         }
     }
 }
