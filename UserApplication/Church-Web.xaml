@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:UserApplication"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="Church-Web" Height="450" Width="800">
+        Title="Church-Web" Height="484" Width="800">
     <Grid Background="#ffdadada">
         <ComboBox x:Name="cb_choice" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="143" Text="All" Loaded="cb_choice_Loaded">
             <ComboBox.BorderBrush>
