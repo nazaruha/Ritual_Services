@@ -23,6 +23,8 @@ namespace UserApplication
     {
         public MyDataContext context;
         bool isEng { get; set; } = true;
+        int cb_choice_selected { get; set; } = -1;
+
         public Church_Web(bool isEng)
         {
             InitializeComponent();
@@ -46,39 +48,18 @@ namespace UserApplication
 
         private void lb_en_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //btn_info.Content = "Info";
-            //btn_order.Content = "Order";
-            //pope_info.Content = "Info 'bout priest";
-            //cb_choice.Items i
             isEng = true;
             ChangeLanguage();
         }
 
         private void lb_ua_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //btn_info.Content = "Інформація";
-            //btn_order.Content = "Замовити";
-            //pope_info.Content = "Інформація про Батюшку";
             isEng = false;
             ChangeLanguage();
         }
 
         private void cb_choice_Loaded(object sender, RoutedEventArgs e)
         {
-            // cb_choice.SelectedIndex = 0;
-            //List<MyComboBoxItems> itemsEN = new List<MyComboBoxItems>
-            //{
-            //    new MyComboBoxItems { Id = 0, Name = "test" },
-            //    new MyComboBoxItems { Id = 1, Name = "Test" }
-            //};
-            //List<MyComboBoxItems> itemsUA = new List<MyComboBoxItems>
-            //{
-            //    new MyComboBoxItems { Id = 0, Name = "тест" },
-            //    new MyComboBoxItems { Id = 1, Name = "Тест" }
-            //};
-            //cb_choice.ItemsSource = itemsEN;
-            //cb_choice.SelectedIndex = 0;
-            //var data = cb_choice.Items[0] as MyComboBoxItems;
             InitializeComboBox(isEng);
         }
 
@@ -106,7 +87,7 @@ namespace UserApplication
             btn_order.Content = "Order";
             father_info.Text = "Ephinapiy Kronapiy - 32 y.o.\r\nThe best father in the world!\r\nLoves children, rep etc.\r\nNeutralized 10 demons, 5 vampires and 20 witches.";
             InitializeComboBox(isEng);
-            
+            InitializeListView(isEng);
         }
 
         private void WindowToUkrainian()
@@ -115,6 +96,97 @@ namespace UserApplication
             btn_order.Content = "Замовити";
             father_info.Text = "Ефінапій Кронапій - 32 роки.\r\nНайкращий батя в світі!\r\nЛюбить дітей, реп і не тільки.\r\nЗнешкодив 10 демонів, 5 вампірів і 20 відьом";
             InitializeComboBox(isEng);
+            InitializeListView(isEng);
+        }
+
+        private void InitializeListView(bool isEng)
+        {
+            switch (isEng)
+            {
+                case true:
+                    {
+                        ListViewToEng();
+                        break;
+                    }
+                case false:
+                    {
+                        ListViewToUA();
+                        break;
+                    }
+            }
+        }
+
+        private void ListViewToEng()
+        {
+            if (cb_choice.SelectedItem.ToString() == "All")
+            {
+                list_view.Items.Clear();
+                foreach (var item in context.Services)
+                {
+                    MyListViewItems serviceEng = new MyListViewItems() { Id = item.Id, Name = item.NameEng, Price = item.Price, Description = item.DescriptionEng, Photo = item.Photo, ServiceTypeId = item.ServiceTypeId};
+                    list_view.Items.Add(serviceEng);
+                }
+            }
+            else if (cb_choice.SelectedItem.ToString() == "Church")
+            {
+                var st = context.ServicesTypes.Where(st => st.NameEng == "Church");
+                list_view.Items.Clear();
+                foreach (var item in context.Services)
+                {
+                    if (item.ServiceType == st)
+                    {
+                        MyListViewItems serviceEng = new MyListViewItems() { Id = item.Id, Name = item.NameEng, Price = item.Price, Description = item.DescriptionEng, Photo = item.Photo, ServiceTypeId = item.ServiceTypeId };
+                        list_view.Items.Add(serviceEng);
+                    }
+                }
+            }
+            else if (cb_choice.SelectedItem.ToString() == "Ritual")
+            {
+                var st = context.ServicesTypes.Where(st => st.NameEng == "Ritual");
+                list_view.Items.Clear();
+                foreach (var item in context.Services)
+                {
+                    if (item.ServiceType == st)
+                    {
+                        MyListViewItems serviceEng = new MyListViewItems() { Id = item.Id, Name = item.NameEng, Price = item.Price, Description = item.DescriptionEng, Photo = item.Photo, ServiceTypeId = item.ServiceTypeId };
+                        list_view.Items.Add(serviceEng);
+                    }
+                }
+            }
+        }
+
+        private void ListViewToUA()
+        {
+            if (cb_choice.SelectedItem.ToString() == "Всі")
+            {
+                list_view.Items.Clear();
+                foreach (var item in context.Services)
+                {
+                    MyListViewItems serviceEng = new MyListViewItems() { Id = item.Id, Name = item.NameUA, Price = item.Price, Description = item.DescriptionUA, Photo = item.Photo, ServiceTypeId = item.ServiceTypeId };
+                    list_view.Items.Add(serviceEng);
+                }
+            }
+            else if (cb_choice.SelectedItem.ToString() == "Церковні")
+            {
+                list_view.Items.Clear();
+                foreach (var item in context.Services)
+                {
+                    MyListViewItems serviceEng = new MyListViewItems() { Id = item.Id, Name = item.NameUA, Price = item.Price, Description = item.DescriptionUA, Photo = item.Photo, ServiceTypeId = item.ServiceTypeId };
+                    if (item.ServiceType == context.ServicesTypes.Where(st => st.NameUA == "Церковні"))
+                        list_view.Items.Add(serviceEng);
+                }
+            }
+            else if (cb_choice.SelectedItem.ToString() == "Ритуальні")
+            {
+                var st = context.ServicesTypes.Where(st => st.NameUA == "Ритуальні");
+                list_view.Items.Clear();
+                foreach (var item in context.Services)
+                {
+                    MyListViewItems serviceEng = new MyListViewItems() { Id = item.Id, Name = item.NameUA, Price = item.Price, Description = item.DescriptionUA, Photo = item.Photo, ServiceTypeId = item.ServiceTypeId };
+                    if (item.ServiceType == context.ServicesTypes.Where(st => st.NameUA == "Ритуальні"))
+                        list_view.Items.Add(serviceEng);
+                }
+            }
         }
 
         private void InitializeComboBox(bool isEng)
@@ -145,7 +217,10 @@ namespace UserApplication
             }
             itemsEN.Add(itemAll);
             cb_choice.ItemsSource = itemsEN;
-            cb_choice.SelectedItem = itemAll;
+            if (cb_choice.SelectedIndex == -1)
+                cb_choice.SelectedItem = itemAll;
+            else
+                cb_choice.SelectedIndex = cb_choice_selected;
         }
 
         private void ComboBoxToUA()
@@ -159,7 +234,18 @@ namespace UserApplication
             }
             itemsUA.Add(itemAll);
             cb_choice.ItemsSource = itemsUA;
-            cb_choice.SelectedItem = itemAll;
+            if (cb_choice.SelectedIndex == -1)
+                cb_choice.SelectedItem = itemAll;
+            else
+                cb_choice.SelectedIndex = cb_choice_selected;
+
+        }
+
+        private void cb_choice_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cb_choice.SelectedIndex == -1) return;
+            InitializeListView(isEng);
+            cb_choice_selected = cb_choice.SelectedIndex;
         }
     }
 }
